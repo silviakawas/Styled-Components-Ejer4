@@ -1,5 +1,18 @@
+import { GlobalStyles } from "./styles/GlobalStyles";
+import Calculator from "./components/calculator/Calculator";
+
 const App = () => {
-	return <h1>Núcleo de la aplicación</h1>;
+	return (
+		<>
+			<GlobalStyles/>
+			<div className="container">
+				<div className="containerCalculator">
+					<Calculator/>
+				</div>
+			</div>
+		</>
+		
+	);
 };
 
 export default App;
